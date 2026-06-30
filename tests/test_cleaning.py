@@ -1,7 +1,8 @@
 # Cleaning tests
+
 import pytest
-import panda as pd
-import panda.testing as pdt
+import pandas as pd
+import pandas.testing as pdt
 from data_processing.cleaning import (
     remove_duplicates,
     handle_missing_values,
