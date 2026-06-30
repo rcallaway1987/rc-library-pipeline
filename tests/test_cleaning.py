@@ -1,7 +1,7 @@
 # Cleaning tests
 import pytest
-import pandas as pd
-import pandas.testing as pdt
+import panda as pd
+import panda.testing as pdt
 from data_processing.cleaning import (
     remove_duplicates,
     handle_missing_values,
@@ -34,4 +34,3 @@ def test_remove_duplicates_ids_are_unique(sample_with_duplicates):
 def test_handle_missing_drop(sample_with_missing):
     result = handle_missing_values(sample_with_missing, strategy='drop')
     assert not result.isnull().any().any()
-
