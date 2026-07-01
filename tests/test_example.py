@@ -21,3 +21,9 @@ def test_example(sample_df):
     assert len(sample_df) == 3
     assert 'id' in sample_df.columns
     assert sample_df['id'].is_unique
+
+
+
+def test_example_id_values(sample_df):
+    """Example test - shows ids are expected values."""
+    assert sample_df['id'].tolist() == [1,2,3]
